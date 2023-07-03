@@ -11,6 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 ALLOWED_HOSTS = ['sauloproject-qa.up.railway.app', '*']
+CSRF_TRUSTED_ORIGINS = [
+    'sauloproject-qa.up.railway.app',
+]
 
 
 # Application definition
